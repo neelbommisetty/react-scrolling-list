@@ -2,7 +2,7 @@ import { combineReducers } from "redux";
 import ListItems from "./dataListReducer";
 
 const rootReducer = combineReducers({
-  listItems: ListItems,
+  data: ListItems,
 });
 
 export default rootReducer;
