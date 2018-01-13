@@ -1,0 +1,28 @@
+.vertical-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  border: 1px solid #ebebeb;
+  padding: 10px;
+  overflow-x: auto;
+  width: 100%;
+  flex-basis: 6;
+}
+
+.vertical-section::-webkit-scrollbar {
+  display: none;
+}
+
+.vertical-list-item {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ebebeb;
+  margin: 10px 0;
+}
+
+.vertical-list-item.active {
+  background-color: cornflowerblue;
+}

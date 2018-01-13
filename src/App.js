@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import HomeContainer from "./containers/homeContainer";
+import HomeContainer from "./containers/home.container";
 
 const App = () => <HomeContainer />;
 

@@ -1,0 +1,29 @@
+.horizontal-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border: 1px solid #ebebeb;
+  padding: 10px;
+  overflow-x: auto;
+  height: 200px;
+  margin-bottom: 10px;
+  flex-basis: 1;
+}
+
+.horizontal-section::-webkit-scrollbar {
+  display: none;
+}
+
+.horizontal-list-item {
+  height: 75px;
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ebebeb;
+  margin-left: 10px;
+}
+
+.horizontal-list-item.active {
+  background-color: cornflowerblue;
+}

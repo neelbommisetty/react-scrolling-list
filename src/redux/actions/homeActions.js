@@ -21,3 +21,8 @@ export function fetchItems() {
       });
   };
 }
+
+export const setSelected = index => ({
+  type: ActionConstants.SET_SELECTED_ITEM,
+  payload: index,
+});
