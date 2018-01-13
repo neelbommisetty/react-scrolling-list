@@ -21,6 +21,7 @@ class HomeComponent extends Component {
     );
   }
 }
+
 HomeComponent.propTypes = {
   listItems: PropTypes.instanceOf(List),
   fetchItems: PropTypes.func.isRequired,
