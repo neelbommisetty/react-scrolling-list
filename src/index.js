@@ -1,16 +1,18 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
+import { render } from "react-dom";
+import { Provider } from "react-redux";
+
+import configureStore from "./redux/configureStore";
 import registerServiceWorker from "./registerServiceWorker";
+import App from "./App";
+import "./index.css";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+const store = configureStore();
 
-if (module.hot) {
-  module.hot.accept("./App", () => {
-    const NextApp = require("./App").default;
-    ReactDOM.render(<NextApp />, document.getElementById("root"));
-  });
-}
-
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById("root"),
+);
 registerServiceWorker();
